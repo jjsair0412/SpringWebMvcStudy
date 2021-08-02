@@ -29,6 +29,7 @@ public class HelloServlet extends HttpServlet {
          *
          * response에서 타입과 인코딩타입을 정해주고
          * 보내줄 값을 정해준다.
+         * 값을 보내줄때는 response.getWriter().write(String 값)을 넣어주면 된다
          */
         String username = reqest.getParameter("username");
         System.out.println("username = " + username);

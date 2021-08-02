@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/request-param" method="post">
+    <!--
+        get일때 사용했던 쿼리 파라미터 형식과
+        Html From의 메시지 바디에 쿼리 파라미터형식과 동일하다.
+        그래서 request.getParameter로 1번의 방법과 2번의 방법 둘다 지원한다.
+        form의 action 속성을 보면, /request-param이다.
+
+        그래서,
+
+        @WebServlet(name = "requestParamServlet", urlPatterns = "/request-param")
+        urlPatterns이 /request-param이 붙어있는 메서드로 값이 전달된다.
+
+        또한 method에는 post방식으로 전달할 것인지 get으로 전달할 것인지를 작성해준다.
+    -->
+    username: <input type="text" name="username" />
+    age: <input type="text" name="age" />
+    <button type="submit">전송</button>
+</form>
+</body>
+</html>

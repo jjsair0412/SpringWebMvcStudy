@@ -12,6 +12,8 @@ import java.io.IOException;
  * 파라미터를 GET방식으로 url에 파라미터로 정보를 전달한 경우
  * 서버에서 받아오는 방법들
  * http://localhost:7060/request-param?username=hello&age=20
+ *
+ * 일단 HttpServlet을 상속받아야 HttpServlet의 기능들을 사용할 수 있다.
  */
 
 @WebServlet(name = "requestParamServlet", urlPatterns = "/request-param")
